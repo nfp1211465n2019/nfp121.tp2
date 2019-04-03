@@ -3,32 +3,32 @@ package question1;
 /**
  * Classe-test FahrenheitCelsiusTest.
  * 
- * @author (votre nom)
- * @version (un numéro de version ou une date)
+ * @author amine amine
+ * @version V1
  * 
- *          Les classes-test sont documentées ici :
+ *          Les classes-test sont documentï¿½es ici :
  *          http://junit.sourceforge.net/javadoc/junit/framework/TestCase.html
- *          et sont basées sur le document © 2002 Robert A. Ballance intitulé
- *          «JUnit: Unit Testing Framework».
+ *          et sont basï¿½es sur le document ï¿½ 2002 Robert A. Ballance intitulï¿½
+ *          ï¿½JUnit: Unit Testing Frameworkï¿½.
  * 
- *          Les objets Test (et TestSuite) sont associés aux classes à tester
+ *          Les objets Test (et TestSuite) sont associï¿½s aux classes ï¿½ tester
  *          par la simple relation yyyTest (e.g. qu'un Test de la classe
  *          Name.java se nommera NameTest.java); les deux se retrouvent dans le
- *          même paquetage. Les "engagements" (anglais : "fixture") forment un
- *          ensemble de conditions qui sont vraies pour chaque méthode Test à
- *          exécuter. Il peut y avoir plus d'une méthode Test dans une classe
- *          Test; leur ensemble forme un objet TestSuite. BlueJ découvrira
- *          automatiquement (par introspection) les méthodes Test de votre
- *          classe Test et générera la TestSuite conséquente. Chaque appel d'une
- *          méthode Test sera précédé d'un appel de setUp(), qui réalise les
- *          engagements, et suivi d'un appel à tearDown(), qui les détruit.
+ *          mï¿½me paquetage. Les "engagements" (anglais : "fixture") forment un
+ *          ensemble de conditions qui sont vraies pour chaque mï¿½thode Test ï¿½
+ *          exï¿½cuter. Il peut y avoir plus d'une mï¿½thode Test dans une classe
+ *          Test; leur ensemble forme un objet TestSuite. BlueJ dï¿½couvrira
+ *          automatiquement (par introspection) les mï¿½thodes Test de votre
+ *          classe Test et gï¿½nï¿½rera la TestSuite consï¿½quente. Chaque appel d'une
+ *          mï¿½thode Test sera prï¿½cï¿½dï¿½ d'un appel de setUp(), qui rï¿½alise les
+ *          engagements, et suivi d'un appel ï¿½ tearDown(), qui les dï¿½truit.
  */
 public class FahrenheitCelsiusTest extends junit.framework.TestCase {
-	// Définissez ici les variables d'instance nécessaires à vos engagements;
-	// Vous pouvez également les saisir automatiquement du présentoir
-	// à l'aide du menu contextuel "Présentoir --> Engagements".
+	// Dï¿½finissez ici les variables d'instance nï¿½cessaires ï¿½ vos engagements;
+	// Vous pouvez ï¿½galement les saisir automatiquement du prï¿½sentoir
+	// ï¿½ l'aide du menu contextuel "Prï¿½sentoir --> Engagements".
 	// Notez cependant que ce dernier ne peut saisir les objets primitifs
-	// du présentoir (les objets sans constructeur, comme int, float, etc.).
+	// du prï¿½sentoir (les objets sans constructeur, comme int, float, etc.).
 
 	/**
 	 * Constructeur de la classe-test FahrenheitCelsiusTest
@@ -39,7 +39,7 @@ public class FahrenheitCelsiusTest extends junit.framework.TestCase {
 	/**
 	 * Met en place les engagements.
 	 * 
-	 * Méthode appelée avant chaque appel de méthode de test.
+	 * Mï¿½thode appelï¿½e avant chaque appel de mï¿½thode de test.
 	 */
 	protected void setUp() // throws java.lang.Exception
 	{
@@ -50,25 +50,25 @@ public class FahrenheitCelsiusTest extends junit.framework.TestCase {
 	/**
 	 * Supprime les engagements
 	 * 
-	 * Méthode appelée après chaque appel de méthode de test.
+	 * Mï¿½thode appelï¿½e aprï¿½s chaque appel de mï¿½thode de test.
 	 */
 	protected void tearDown() // throws java.lang.Exception
 	{
-		// Libérez ici les ressources engagées par setUp()
+		// Libï¿½rez ici les ressources engagï¿½es par setUp()
 	}
 
 	/**
-	 * Il ne vous reste plus qu'à définir une ou plusieurs méthodes de test. Ces
-	 * méthodes doivent vérifier les résultats attendus à l'aide d'assertions
-	 * assertTrue(<boolean>). Par convention, leurs noms devraient débuter par
-	 * "test". Vous pouvez ébaucher le corps grâce au menu contextuel
-	 * "Enregistrer une méthode de test".
+	 * Il ne vous reste plus qu'ï¿½ dï¿½finir une ou plusieurs mï¿½thodes de test. Ces
+	 * mï¿½thodes doivent vï¿½rifier les rï¿½sultats attendus ï¿½ l'aide d'assertions
+	 * assertTrue(<boolean>). Par convention, leurs noms devraient dï¿½buter par
+	 * "test". Vous pouvez ï¿½baucher le corps grï¿½ce au menu contextuel
+	 * "Enregistrer une mï¿½thode de test".
 	 */
 	public void test_fahrenheitEnCelsius() {
-		assertEquals("    0 °F -> -17.7 °C ? ", -17.7, question1.FahrenheitCelsius.fahrenheitEnCelsius(0), 0.1);
-		assertEquals("  100 °F -> 37.7 °C ? ", 37.7, question1.FahrenheitCelsius.fahrenheitEnCelsius(100), 0.1);
-		assertEquals(" 2000 °F -> 1093.3 °C ?", 1093.3, question1.FahrenheitCelsius.fahrenheitEnCelsius(2000), 0.1);
-		assertEquals("   54 °F -> 12.2 °C ?", 12.2, question1.FahrenheitCelsius.fahrenheitEnCelsius(54), 0.1);
+		assertEquals("    0 ï¿½F -> -17.7 ï¿½C ? ", -17.7, question1.FahrenheitCelsius.fahrenheitEnCelsius(0), 0.1);
+		assertEquals("  100 ï¿½F -> 37.7 ï¿½C ? ", 37.7, question1.FahrenheitCelsius.fahrenheitEnCelsius(100), 0.1);
+		assertEquals(" 2000 ï¿½F -> 1093.3 ï¿½C ?", 1093.3, question1.FahrenheitCelsius.fahrenheitEnCelsius(2000), 0.1);
+		assertEquals("   54 ï¿½F -> 12.2 ï¿½C ?", 12.2, question1.FahrenheitCelsius.fahrenheitEnCelsius(54), 0.1);
 	}
 	
 }
