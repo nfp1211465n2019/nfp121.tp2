@@ -2,21 +2,30 @@ package question2;
 
 
 /**
- * Décrivez votre classe FahrenheitCelsius ici.
+ * Dï¿½crivez votre classe FahrenheitCelsius ici.
  * 
- * @author (votre nom) 
- * @version (un numéro de version ou une date)
+ * @author amine amine
+ * @version V1
  */
 public class FahrenheitCelsius{
 
-     /** le point d'entrée de cette application, 
-      * dont le commentaire est à compléter
+     /** le point d'entrï¿½e de cette application, 
+      * dont le commentaire est ï¿½ complï¿½ter
       *
       *  @param args ...
       */
      public static void main(String[] args){
        try{
-       
+        int fahrenheit = 0;
+        float celsius = 0;
+        int lengthArgs = args.length;
+        for(int i = 0; i < lengthArgs ; i++){
+          fahrenheit = Integer.parseInt(args[i]);
+          celsius = fahrenheitEnCelsius(Integer.parseInt(args[i]));
+          System.out.println(fahrenheit + "\u00B0F -> " + celsius + "\u00B0C"); // ligne,
+                                            // format
+                                            // imposï¿½s
+        }
       
        }catch(NumberFormatException nfe){
            System.out.println("error : " + nfe.getMessage());  // en cas d'erreur 
@@ -25,14 +34,14 @@ public class FahrenheitCelsius{
      }
      
      /** 
-      * la méthode à compléter. 
-      *   @param f la valeur en degré Fahrenheit
-      *   @return  la conversion en degré Celsius
+      * la mï¿½thode ï¿½ complï¿½ter. 
+      *   @param f la valeur en degrï¿½ Fahrenheit
+      *   @return  la conversion en degrï¿½ Celsius
       */
      public static float fahrenheitEnCelsius( int f){
-       // ...
-       return 0.F;	// à compléter	en remplaçant la valeur retournée par la fonction de conversion
-       // ...
+      float degreCelsius = (f-32) * 5/9f;
+      degreCelsius = (int)(degreCelsius*10)/10.0f; // un seul chiffre derriï¿½re la virgule,
+      return degreCelsius;
      }
 
 }
